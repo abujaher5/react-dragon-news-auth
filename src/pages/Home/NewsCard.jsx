@@ -44,16 +44,12 @@ const NewsCard = ({ news }) => {
       <div>
         <h2 className="mb-1 text-xl font-semibold">{title}</h2>
 
-        <img
-          src={image_url}
-          alt=""
-          className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500"
-        />
+        <img src={image_url} alt="" />
 
         {details.length > 200 ? (
           <p>
             {details.slice(0, 200)}
-            <Link to={`/news/${_id}`} className="font-bold text-orange-500">
+            <Link to={`/news/${_id}`} className="font-semibold text-orange-500">
               Read More..
             </Link>
           </p>
